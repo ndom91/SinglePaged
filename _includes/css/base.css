@@ -29,12 +29,16 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
+
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;
+	 }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block; }
+		display: block;
+	}
 	body {
-		line-height: 1; }
+		line-height: 1;
+	 }
 	ol, ul {
 		list-style: none; }
 	blockquote, q {
@@ -47,12 +51,76 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
+.header-icons {
+	display:flex;
+	justify-content:center;
+	text-align:center;
+}
+.down,.header-icons .icon {
+	color:#fff;
+	text-align:center;
+}
+.header-icons .icon {
+	height:60px;
+	/* border-radius:50%;
+	border:1px solid #fff; */
+	transition:all .7s;
+	width:60px;
+	font-size:35px;
+	margin:10px;
+}
+.header-icons .icon:active,.header-icons .icon:hover {
+	color:#264653;
+}
+@media only screen and (min-width:550px) {
+	.header-icons .icon {
+		font-size:35px;
+		}
+}
+.down {
+	position:absolute;
+	bottom:25px;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	display:block;
+	font-size:30px;
+	cursor:pointer;
+}
+.down .icon {
+	position:absolute;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:100px;
+	height:100px;
+	fill:#fff;
+	-webkit-animation:pulse 1.3s infinite;
+	animation:pulse 1.3s infinite;
+}
+@media only screen and (max-width: 767px) {
+	.header-icons .icon {
+		margin: 0px;
+	}
+	pre.headerpre {
+		margin: 15px 5px;
+		padding: 15px 5px;
+	}
+}
 
+.headerimg {
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
 /* #Basic Styles
 ================================================== */
 	body {
 		background: #fff;
-		font: 14px/21px "Raleway", "HelveticaNeue-Light", Arial, sans-serif;
+		font: 14px/21px Monaco, Menlo, Consolas, "Courier New", monospace;
+		/* "Raleway", "HelveticaNeue-Light", Arial, sans-serif; */
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
@@ -89,6 +157,11 @@
 
 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
 
+	.headerpre {
+		font-size: 28px;
+		padding: 20px 10px;
+		margin: 20px 100px;
+	}
 
 /* #Links
 ================================================== */
@@ -150,8 +223,8 @@
 	  margin-bottom: 20px;
 	  line-height: normal;
 	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,

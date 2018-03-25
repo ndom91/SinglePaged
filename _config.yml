@@ -1,10 +1,5 @@
 ---
 
-port: 4000
-host: 0.0.0.0
-safe: false
-
-
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
 permalink: / ## disables post output
@@ -18,8 +13,8 @@ title:       "ndom91"
 keywords:    "Singlepaged, jekyll, github, blog, resume, nico domino"
 description: "ndom91 resume"
 source_link: "https://github.com/t413/SinglePaged"
-favicon:     #put a path like: "img/favicon.ico"
-touch_icon:  #put a path like: "img/apple-touch-icon.png"
+favicon:     "img/ndo_logo64.png"
+touch_icon:  "img/ndo_logo64.png"
 google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable)
 
 
@@ -27,11 +22,13 @@ google_analytics_key: ## put YOUR key here to enable tracking! (blank to disable
 colors:
   black:     '#111111'
   white:     '#f8f8f8'
-  blue:      '#49a7e9'
+  blue:      '#264653'
   green:     '#9bcf2f'
-  purple:    '#c869bf'
+  purple:    '#e9c46a'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
 
 kramdown:
   auto_ids:  false
+
+# sudo jekyll build --verbose --destination /var/www/html/resume
